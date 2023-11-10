@@ -1,0 +1,1 @@
+(function(b,a){typeof exports==="object"&&typeof module!=="undefined"?module.exports=a():typeof define==="function"&&define.amd?define(a):(b=b||self,(b.FullCalendarLocales=b.FullCalendarLocales||{},b.FullCalendarLocales.ug=a()))}(this,function(){var a={code:"ug",buttonText:{month:"ئاي",week:"ھەپتە",day:"كۈن",list:"كۈنتەرتىپ"},allDayText:"پۈتۈن كۈن"};return a}));
