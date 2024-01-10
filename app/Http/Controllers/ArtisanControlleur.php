@@ -41,6 +41,8 @@ class ArtisanControlleur extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
+        $request['type_stand'] = "type_stand";
+        $request['nom_pavillon'] = "nom_pavillon";
         Artisan::create($request->all());
 
         return redirect()->route('artisan.index');
@@ -86,17 +88,17 @@ class ArtisanControlleur extends Controller
 
         $artisan->nom = $request->nom;
         $artisan->prenom = $request->prenom;
-        $artisan->raison_social = $request->raison_social;
+        //$artisan->raison_social = $request->raison_social;
         $artisan->contact = $request->contact;
         $artisan->domaine_activite = $request->domaine_activite;
         $artisan->email = $request->email;
         $artisan->ville = $request->ville;
         $artisan->pays = $request->pays;
-        $artisan->responsable_stand = $request->responsable_stand;
+       /* $artisan->responsable_stand = $request->responsable_stand;
         $artisan->accompagnateur1 = $request->accompagnateur1;
         $artisan->accompagnateur2 = $request->accompagnateur2;
         $artisan->type_stand = $request->type_stand;
-        $artisan->nom_pavillon = $request->nom_pavillon;
+        $artisan->nom_pavillon = $request->nom_pavillon;*/
         $artisan->save();
         return redirect()->route('artisan.index');
     

@@ -43,7 +43,7 @@ class UserController extends Controller
         //dd($request->all());
 
         User::create($request->all());
-
+        return redirect()->route('user.index');
         return back();
     }
 

@@ -169,20 +169,32 @@
 
                                 <li class="nav-item has-treeview"><a href="#" class="nav-link"><i
                                             class="nav-icon fas fa-circle"></i>
-                                        <p>Location/Réservation <span class="badge badge-info right">5</span> </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('location_reservation') }}" class="nav-link">
-                                                <p>Liste<span class="badge badge-info right">@php
-                                                    $users = App\Models\Artisan::all();
+                                        <p>Location/Réservation <span class="badge badge-info right">
+                                            @php
+                                                    $datas = App\Models\LocationReservation::all();
                                                     $i = 0;
-                                                    foreach ($users as $key => $value) {
+                                                    foreach ($datas as $key => $value) {
                                                         $i++;
                                                     }
 
                                                     echo $i;
-                                                @endphp</span>
+                                                @endphp
+                                        </span> </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="{{ route('location_reservation') }}" class="nav-link">
+                                                <p>Liste<span class="badge badge-info right">
+                                                    @php
+                                                    $datas = App\Models\LocationReservation::all();
+                                                    $i = 0;
+                                                    foreach ($datas as $key => $value) {
+                                                        $i++;
+                                                    }
+
+                                                    echo $i;
+                                                @endphp
+                                                </span>
                                                 </p>
                                             </a>
                                         </li>

@@ -25,8 +25,8 @@
                             required>
                     </div>
                     <div class="form-group">
-                        <label for="raison_social">Raison social :</label>
-                        <input type="text" class="form-control" id="raison_social" placeholder="Entrez votre raison social"
+                        <!--label for="raison_social">Raison social :</label-->
+                        <input type="hidden" class="form-control" id="raison_social" value="raison_social" placeholder="Entrez votre raison social"
                             name="raison_social" required>
                     </div>
                     
@@ -59,48 +59,23 @@
 
 
                     <div class="form-group">
-                        <label for=" responsable_stand">Responsable de stand:</label>
-                        <input type="text" class="form-control" id=" responsable_stand" placeholder="Entrez votre le nom du responsable de stand"
-                            name=" responsable_stand" required>
+                        <!--label for=" responsable_stand">Responsable de stand:</label-->
+                        <input type="hidden" class="form-control" id=" responsable_stand" placeholder="Entrez votre le nom du responsable de stand"
+                            name=" responsable_stand" value=" responsable_stand" required>
                     </div>
 
 
                     <div class="form-group">
-                        <label for="accompagnateur1">Accompagnateur 1 :</label>
-                        <input type="text" class="form-control" id="accompagnateur1" placeholder="Entrez le nom de l'accompagnateur 1"
-                            name="accompagnateur1" required>
+                        <!--label for="accompagnateur1">Accompagnateur 1 :</label-->
+                        <input type="hidden" class="form-control" id="accompagnateur1" placeholder="Entrez le nom de l'accompagnateur 1"
+                            name="accompagnateur1" value="accompagnateur1" required>
                     </div>
 
 
                     <div class="form-group">
-                        <label for="accompagnateur2">Accompagnateur 2 :</label>
-                        <input type="text" class="form-control" id="accompagnateur2" placeholder="Entrez le nom de l'accompagnateur 2"
-                            name="accompagnateur2" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="type_stand">Type de Stand :</label>
-                        <select class="form-select" id="type_stand" placeholder="Type de Stand"
-                        name="type_stand" required>
-                            <option value="">Selectionnez la fonction</option>
-                            <option value="climentiser">climentiser</option>
-                            <option value="ventiller">ventiller</option>
-                            <option value="simple">simple</option>
-                        </select>   
-                    </div>
-
-                    <div class="form-group">
-                        <label for="nom_pavillon">Pavillon:</label>
-                        <select class="form-select" id="nom_pavillon" placeholder="nom_pavillon"
-                        name="nom_pavillon" required>
-                            <option value="">Selectionnez la fonction</option>
-                            <option value="pyramide">Pyramide</option>
-                            <option value="kilmadjaro">Kilmadjaro</option>
-                            <option value="soleil_levant">Soleil Levant</option>
-                        </select>
-
-                            
-                            
+                        <!--label for="accompagnateur2">Accompagnateur 2 :</label-->
+                        <input type="hidden" class="form-control" id="accompagnateur2" placeholder="Entrez le nom de l'accompagnateur 2"
+                            name="accompagnateur2" value="accompagnateur2" required>
                     </div>
 
                     <div class="col-12 d-flex justify-content-center">

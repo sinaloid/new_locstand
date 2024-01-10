@@ -25,11 +25,11 @@
                         <input type="email" class="form-control" id="email" placeholder="Entrez votre email" name="email" value="{{$data->email}}"
                             required>
                     </div>
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label for="raison_social">Raison social :</label>
                         <input type="text" class="form-control" id="raison_social" placeholder="Entrez votre raison social"
                             name="raison_social" value="{{$data->raison_social}}" required>
-                    </div>
+                    </div-->
                     
 
                     <div class="form-group">
@@ -59,7 +59,7 @@
                     </div>
 
 
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label for=" responsable_stand">Responsable de stand:</label>
                         <input type="text" class="form-control" id=" responsable_stand" placeholder="Entrez votre le nom du responsable de stand"
                             name=" responsable_stand" value="{{$data->responsable_stand}}" required>
@@ -99,7 +99,7 @@
                             <option value="kilmadjaro">Kilmadjaro</option>
                             <option value="soleil_levant">Soleil Levant</option>
                         </select>
-                    </div>
+                    </div-->
 
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary ">Modifier</button>

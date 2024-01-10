@@ -26,7 +26,7 @@
                             name="email" required>
                     </div>
 
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label for="direction">Direction :</label>
                         <select class="form-select" id="direction" placeholder="direction"
                         name="direction" required>
@@ -46,7 +46,7 @@
                             <option value="fonction 2">fonction 2</option>
                             <option value="fonction 3">fonction 3</option>
                         </select>
-                    </div>
+                    </div-->
 
                     <div class="form-group">
                         <label for="type_user">Type-user :</label>

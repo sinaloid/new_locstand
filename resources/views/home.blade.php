@@ -13,7 +13,7 @@
                             $users = App\Models\Artisan::all();
                             $i = 0;
                             foreach ($users as $key => $value) {
-                              $i++;
+                                $i++;
                             }
 
                             echo $i;
@@ -28,7 +28,17 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53/700</h3>
+                        <h3>
+                            @php
+                                $datas = App\Models\LocationReservation::all();
+                                $i = 0;
+                                foreach ($datas as $key => $value) {
+                                    $i++;
+                                }
+
+                                echo $i;
+                            @endphp
+                        </h3>
                         <p>Stands occupés</p>
                     </div>
                     <div class="icon"><i class="ion ion-stats-bars"></i></div>
@@ -42,7 +52,7 @@
                             $users = App\Models\User::all();
                             $i = 0;
                             foreach ($users as $key => $value) {
-                              $i++;
+                                $i++;
                             }
 
                             echo $i;
