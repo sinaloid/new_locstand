@@ -36,6 +36,8 @@ Route::resource('/location_reservation', LocationReservationController::class);
 
 Route::post('/recherche', [App\Http\Controllers\LocationReservationController::class, 'recherche'])->name('recherche');
 
+Route::get('/list-artisan/export/', [ArtisanControlleur::class, 'export'])->name("exportArtisans");
+Route::get('/list-reservation/export/', [LocationReservationController::class, 'export'])->name("exportReservations");
 
 Route::get('/ajoute_artisan', function () {
     return view('ajoute_artisan');

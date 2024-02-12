@@ -15,7 +15,9 @@
               </form>
         </div>
         <div class="col-12 col-md-10 mx-auto my-5">
-            
+            <div class="d-flex">
+                <a href="{{route('exportReservations')}}" class="btn btn-primary mb-3 ms-auto">Exporter la liste des artisans</a>
+              </div>
             <table class="table table-striped">
                 <thead>
                     <tr>

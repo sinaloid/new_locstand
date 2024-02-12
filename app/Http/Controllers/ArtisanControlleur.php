@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Artisan;
 use Illuminate\Support\Facades\Hash;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\ArtisansExport;
 
 class ArtisanControlleur extends Controller
 {
@@ -118,6 +120,11 @@ class ArtisanControlleur extends Controller
 
         $artisan->delete();
         return redirect()->route('artisan.index');
+    }
+
+    public function export() 
+    {
+        return Excel::download(new ArtisansExport, 'artisans.xlsx');
     }
 }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

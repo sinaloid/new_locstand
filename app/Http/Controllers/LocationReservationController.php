@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Stand;
 use App\Models\Artisan;
 use App\Models\LocationReservation;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\ReservationExport;
 
 class LocationReservationController extends Controller
 {
@@ -113,5 +115,10 @@ class LocationReservationController extends Controller
 
         $stand->delete();
         return redirect()->route('stand.index');
+    }
+
+    public function export() 
+    {
+        return Excel::download(new ReservationExport, 'reservations.xlsx');
     }
 }

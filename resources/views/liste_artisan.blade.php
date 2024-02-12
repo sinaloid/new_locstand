@@ -4,6 +4,9 @@
     <div class="container-fluid">
         <p class="text-center font-weight-bold tilte">Liste artisans</p>
         <div class="col-12 col-md-12 mx-auto my-5">
+          <div class="d-flex">
+            <a href="{{route('exportArtisans')}}" class="btn btn-primary mb-3 ms-auto">Exporter la liste des artisans</a>
+          </div>
             <table class="table table-striped">
                 <thead>
                   <tr>
