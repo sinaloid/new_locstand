@@ -3,15 +3,15 @@
 @section('content')
     <div class="container-fluid">
         <p class="text-center font-weight-bold tilte">Liste utilisateurs</p>
-        <div class="col-12 col-md-8 mx-auto my-5">
+        <div class="col-12 col-md-10 mx-auto my-5">
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Nom</th>
                         <th>Prenom</th>
                         <th>Email</th>
-                        <th>Direction</th>
-                        <th>Fonction</th>
+                        <!--th>Direction</th>
+                        <th>Fonction</th-->
                         <th>Role</th>
                         <th>Action</th>
                     </tr>
@@ -22,8 +22,8 @@
                             <td>{{ $data->nom }}</td>
                             <td>{{ $data->prenom }}</td>
                             <td>{{ $data->email }}</td>
-                            <td>{{ $data->direction }}</td>
-                            <td>{{ $data->fonction }}</td>
+                            <!--td>{{ $data->direction }}</td>
+                            <td>{{ $data->fonction }}</td-->
                             <td>{{ $data->type_user }}</td>
                             <td>
                                 <a href="{{ route('user.show', $data->id) }}"  class="btn btn-info">Voir</a>
